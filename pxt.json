@@ -1,15 +1,41 @@
 {
     "name": "PVZ Micro",
-    "version": "0.0.0",
-    "files": [
-        "plants.ts",
-        "main.ts"
-    ],
-    "supportedTargets": [
-        "arcade"
-    ],
+    "description": "",
     "dependencies": {
         "device": "*"
     },
-    "testDependencies": {}
+    "files": [
+        "images.g.jres",
+        "images.g.ts",
+        "main.ts",
+        "README.md",
+        "assets.json"
+    ],
+    "targetVersions": {
+        "branch": "stable4.1",
+        "tag": "v4.1.25",
+        "commits": "https://github.com/microsoft/pxt-arcade/commits/d4885bd35de1a9300183bf5a3fd1eec816992625",
+        "target": "4.1.25",
+        "pxt": "13.1.23"
+    },
+    "preferredEditor": "tsprj",
+    "languageRestriction": "javascript-only",
+    "palette": [
+        "#000000",
+        "#FFF9E5",
+        "#FF2121",
+        "#FF93C4",
+        "#FF8135",
+        "#FFF609",
+        "#229B83",
+        "#62DB51",
+        "#2F5FB1",
+        "#67E0FE",
+        "#A22EC2",
+        "#A593A2",
+        "#5C406c",
+        "#D3C9D9",
+        "#AB5236",
+        "#000000"
+    ]
 }
