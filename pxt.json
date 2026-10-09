@@ -7,6 +7,8 @@
     "files": [
         "images.g.jres",
         "images.g.ts",
+        "plants.ts",
+        "zombies.ts",
         "main.ts",
         "README.md",
         "assets.json"
