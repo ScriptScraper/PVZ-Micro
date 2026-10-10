@@ -8,6 +8,9 @@
     "files": [
         "images.g.jres",
         "images.g.ts",
+        "setup.ts",
+        "cursors.ts",
+        "seedPackets.ts",
         "plants.ts",
         "zombies.ts",
         "main.ts",

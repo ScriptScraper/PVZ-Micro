@@ -6,7 +6,7 @@ class Plant extends sprites.ExtendableSprite {
     currentInterval: number
 
     constructor(toughness: number, sunCost: number, behaviorInterval: number) {
-        super(img`.`, SpriteKind.Player)
+        super(img`.`, SpriteKind.Plant)
         this.toughness = toughness
         this.sunCost = sunCost
         this.behaviorInterval = behaviorInterval
@@ -14,15 +14,26 @@ class Plant extends sprites.ExtendableSprite {
     }
 
     behaviorAI() {}
-    onHitAI() {}
+    onHitAI(damage: number) {}
     animationController() {}
 }
 
 class Peashooter extends Plant {
     constructor() {
         super(300, 100, randint(68, 75))
-        enum AnimationState {
-            null, idle, attack
+    }
+
+    behaviorAI() {
+        if (this.currentInterval <= 0) {
+
+        } else {
+            this.currentInterval -= 1
         }
+    }
+    onHitAI(damage: number) {
+        this.toughness -= damage
+    }
+    animationController() {
+        
     }
 }

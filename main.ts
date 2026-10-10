@@ -1,1 +1,1 @@
-//Frame event handler
+//Frame events and game startups will be defined here
