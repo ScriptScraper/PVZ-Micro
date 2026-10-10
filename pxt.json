@@ -9,7 +9,7 @@
         "images.g.jres",
         "images.g.ts",
         "setup.ts",
-        "cursors.ts",
+        "cursor.ts",
         "seedPackets.ts",
         "plants.ts",
         "zombies.ts",
