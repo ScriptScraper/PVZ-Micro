@@ -3,7 +3,9 @@
     "description": "",
     "dependencies": {
         "device": "*",
-        "arcade-piano-roll": "github:microsoft/arcade-piano-roll#v0.0.1"
+        "arcade-piano-roll": "github:microsoft/arcade-piano-roll#v0.0.1",
+        "bettersettings": "github:sargedev/bettersettings#v0.0.0",
+        "arcade-background-scroll": "github:riknoll/arcade-background-scroll#master"
     },
     "files": [
         "images.g.jres",
