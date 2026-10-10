@@ -2,7 +2,8 @@
     "name": "PVZ Micro",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "arcade-piano-roll": "github:microsoft/arcade-piano-roll#v0.0.1"
     },
     "files": [
         "images.g.jres",
