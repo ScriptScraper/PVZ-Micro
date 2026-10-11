@@ -1,4 +1,4 @@
-//Initialation code and constants will be defined here
+// Initialization code will go here
 namespace userconfig {
     export const ARCADE_SCREEN_WIDTH = 192
     export const ARCADE_SCREEN_HEIGHT = 144

@@ -1,13 +1,22 @@
 {
     "name": "PVZ Micro",
-    "description": "",
+    "description": "The definitive demake of PVZ on Makecade Arcade, made by ScriptScraper.",
     "dependencies": {
         "device": "*",
         "arcade-piano-roll": "github:microsoft/arcade-piano-roll#v0.0.1",
-        "bettersettings": "github:sargedev/bettersettings#v0.0.0",
-        "arcade-background-scroll": "github:riknoll/arcade-background-scroll#master"
+        "arcade-fancy-text": "github:riknoll/arcade-fancy-text#v0.2.2",
+        "arcade-background-scroll": "github:microsoft/arcade-background-scroll#v0.1.2",
+        "arcade-sprite-util": "github:jwunderl/arcade-sprite-util#v0.6.0",
+        "BetterSettings": "github:sargedev/bettersettings#2023.5.1",
+        "ScriptScript Round (font)": "pub:38515-20268-92296-62915",
+        "ScriptScript Bold (font)": "pub:81981-12462-97896-64517",
+        "Arcade Easing - Copy": "github:ChimbroDaPro/arcade-easing#v1.0.0",
+        "sprite-fx": "github:kohanmathers/makecodespritefx#v1.3.0"
     },
     "files": [
+        "main.ts",
+        "README.md",
+        "assets.json",
         "images.g.jres",
         "images.g.ts",
         "setup.ts",
@@ -15,9 +24,9 @@
         "seedPackets.ts",
         "plants.ts",
         "zombies.ts",
-        "main.ts",
-        "README.md",
-        "assets.json"
+        "lawns.ts",
+        "overlaps.ts",
+        "buttonInputs.ts"
     ],
     "targetVersions": {
         "branch": "stable4.1",
@@ -45,5 +54,14 @@
         "#D3C9D9",
         "#AB5236",
         "#000000"
-    ]
+    ],
+    "theme": {
+        "layout": "default",
+        "background-color": "#62DB51",
+        "button-stroke": "#229B83",
+        "text-color": "#FFF9E5",
+        "button-fill": "#5C406C",
+        "dpad-fill": "#5C406C",
+        "joystick-handle-stroke": "#229B83"
+    }
 }

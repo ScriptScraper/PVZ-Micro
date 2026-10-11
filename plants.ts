@@ -1,15 +1,26 @@
-//Plant classes will be defined here
-class Plant extends sprites.ExtendableSprite {
+// Plant classes will go here
+class Plant {
+    // Stats
+    maxToughness: number
     toughness: number
-    sunCost: number
     behaviorInterval: number
     currentInterval: number
-    constructor(toughness: number, sunCost: number, behaviorInterval: number) {
-        super(img`.`, SpriteKind.Plant)
-        this.toughness = toughness
-        this.sunCost = sunCost
+
+    // Postion
+    column: number = 0
+    row: number = 0
+
+    // Animation
+    frameIndex = 0
+    frameInterval = 83
+    plantImage: Image
+    frames: Image[]
+
+    constructor(maxToughness: number, behaviorInterval: number, currentInterval: number, plantImage: Image, frames: Image[]) {
+        this.maxToughness = maxToughness
+        this.toughness = maxToughness
         this.behaviorInterval = behaviorInterval
-        this.currentInterval = behaviorInterval
+        this.currentInterval = currentInterval
     }
     behaviorAI() {}
     onHitAI(damage: number) {}
@@ -18,16 +29,16 @@ class Plant extends sprites.ExtendableSprite {
 
 class Peashooter extends Plant {
     constructor() {
-        super(300, 100, randint(68, 75))
+        super(300, 1500, 900, assets.image`peashooterSprite`, [])
     }
     behaviorAI() {
         if (this.currentInterval <= 0) {
-
+            this.currentInterval -= game.eventContext().deltaTimeMillis
         } else {
-            this.currentInterval -= 1
+            this.currentInterval = this.behaviorInterval
         }
     }
-    onHitAI(damage: number) {
+    onHitAI(damage:number) {
         this.toughness -= damage
     }
     animationController() {

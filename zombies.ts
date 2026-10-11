@@ -1,1 +1,1 @@
-//zombie classes will be defined here
+// Zombie classes will go here
