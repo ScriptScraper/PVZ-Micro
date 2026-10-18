@@ -1,4 +1,4 @@
-This is a demake of the original PVZ, made using Makecode Arcade. This repo just contains the code for the game, to play it, it can be found [here](https://makecode.com/_cg8PWx9cCciX)
+This is a demake of the original PVZ, made using Makecode Arcade. This repo just contains the code for the game, to play it, it can be found [here](https://makecode.com/_cg8PWx9cCciX).
 
 Note: all the .ts files are where the game code is.
 
